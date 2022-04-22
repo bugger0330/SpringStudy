@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <!-- <select id="메소드 이름" parameterType="매개변수 타입" resultType="리턴 타입"> -->
+  
+<mapper namespace="com.instagram.app.domain.user.UserRepository">
+	<select id="checkUsername" parameterType="String" resultType="Integer">
+		select 
+			count(username)
+		from
+			user_mst
+		where
+			username = #{username};
+	</select>
+
+
+	<insert id="signup" parameterType="com.instagram.app.domain.user.User">
+		insert into
+			user_mst
+		values(
+			0,
+			#{phone},
+			#{email},
+			#{name},
+			#{username},
+			#{password},
+			now(),
+			now()
+		);
+	
+	</insert>
+
+	<select id="getUserByUsername" parameterType="String" resultType="com.instagram.app.domain.user.User">
+		select
+			usercode,
+			phone,
+			email,
+			name,
+			username,
+			password,
+			create_date,
+			update_date
+		from
+			user_mst
+		where
+			username = #{username};
+	</select>
+
+
+
+
+
+
+
+</mapper>  
+  
+  
+
+  
+  
+  
