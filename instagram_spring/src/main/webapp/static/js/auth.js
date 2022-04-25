@@ -37,7 +37,7 @@ password_input.onkeyup = () => {
     }
 }
 
-signin_button.onclick = () => {
+/*signin_button.onclick = () => {
     if (username_input.value.length == 0) {
         alert("아이디를 입력해주세요.");
     } else if (password_input.value.length == 0) {
@@ -45,4 +45,4 @@ signin_button.onclick = () => {
     } else {
         alert("로그인 시도");
     }
-}
+}*/

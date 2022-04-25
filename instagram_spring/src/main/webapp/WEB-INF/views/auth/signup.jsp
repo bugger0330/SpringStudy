@@ -73,7 +73,7 @@
                         </form>
                     </div>
                     <div class="item-group">
-                        <p>계정이 있으신가요? <a href="auth.html">로그인</a></p>
+                        <p>계정이 있으신가요? <a href="/app/auth/signin">로그인</a></p>
                     </div>
                     <div class="download-img">
                         <img src="/app/static/images/download.png">

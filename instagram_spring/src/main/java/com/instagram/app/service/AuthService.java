@@ -7,5 +7,6 @@ public interface AuthService {
 
 	public boolean checkUsername(String username);
 	public boolean signup(SignupRequestDto signupRequestDto);
+	public User signin(String username, String password);
 	
 }
