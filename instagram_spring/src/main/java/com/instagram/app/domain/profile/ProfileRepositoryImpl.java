@@ -4,6 +4,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.instagram.app.domain.user.User;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
 
 @Repository
@@ -30,6 +31,12 @@ public class ProfileRepositoryImpl implements ProfileRepository {
 	public int updateUserDtl(Account account) {
 		// TODO Auto-generated method stub
 		return session.update(NAME_SPACE + "updateUserDtl", account);
+	}
+
+	@Override
+	public int updatePassword(User user) {
+		
+		return session.update(NAME_SPACE + "updatePassword", user);
 	}
 
 	
