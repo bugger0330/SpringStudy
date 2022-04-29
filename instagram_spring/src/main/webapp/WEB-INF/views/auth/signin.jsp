@@ -22,7 +22,7 @@
                 </div>
                 <div class="r-content">
                     <div class="item-box">
-                        <h1 class="b-logo"><img src="/app/static/images/instagram_logo.png"></h1>
+                        <h1 class="b-logo"><img src="/app/static/images/instagram_logo.PNG"></h1>
                         <div class="items-group">
                             <form action="/app/auth/signin" method="post" class="items-group-form">
                                 <div class="input-items">
@@ -48,11 +48,11 @@
                             </div>
                             <a href="#">비밀번호를 잊으셨나요?</a>
                         </div>
-	                    <div class="item-box">
-	                        <div class="signup-items">
-	                            <p>계정이 없으신가요? <a href="/app/auth/signup">가입하기</a></p>
-	                        </div>
-	                    </div>
+                    </div>
+                    <div class="item-box">
+                        <div class="signup-items">
+                            <p>계정이 없으신가요? <a href="signup.html">가입하기</a></p>
+                        </div>
                     </div>
                     <div class="r-content-footer">
 
